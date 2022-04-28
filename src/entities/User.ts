@@ -11,6 +11,8 @@ class User {
     email: string
     @Column()
     admin: boolean
+    @Column()
+    password: string
     @CreateDateColumn()
     created_at: Date
     @UpdateDateColumn()
