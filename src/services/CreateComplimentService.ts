@@ -10,7 +10,7 @@ interface IComplimentRequest{
 }
 
 class CreateComplimentService{
-async execute({tag_id, user_receiver, user_sender, message} : IComplimentRequest){
+async execute({tag_id,  user_sender, user_receiver, message} : IComplimentRequest){
 
     const complimentsRepositories = getCustomRepository(ComplimentsRepositories)
     const usersRepositories = getCustomRepository(UsersRepositories)
